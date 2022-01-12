@@ -53,10 +53,12 @@ async function getQuotes()
 function tweetQuote()
 {
     //url with element to passed "quote" - "author"
-    const twitUrl = `https://twitter.com/intent/tweet?${quoteText.textContent} - ${authorText.textContent}`;
+    
+
+    const twitUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
     //_blank to open in new tab
     window.open(twitUrl, '_blank');
-
+    // 
 }
 
 //Even listener for add quote and twitter post
